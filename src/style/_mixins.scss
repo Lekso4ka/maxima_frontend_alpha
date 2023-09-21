@@ -1,0 +1,38 @@
+@import 'variables';
+
+@mixin font($font-size: 22px, $line-height: 24px, $font-weight: 400, $font-style: normal) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+@mixin mobileSmall {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mobileWide {
+    @media (max-height: 450px) {
+        @content;
+    }
+}

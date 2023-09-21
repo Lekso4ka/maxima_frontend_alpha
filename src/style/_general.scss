@@ -1,0 +1,209 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  //color: inherit;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-Extrabold.eot);
+  src: url(../assets/fonts/Gilroy/Gilroy-Extrabold.eot?#iefix) format('embedded-opentype'),
+  url(../assets/fonts/Gilroy/Gilroy-Extrabold.woff2) format('woff2'),
+  url(../assets/fonts/Gilroy/Gilroy-Extrabold.woff) format('woff'),
+  url(../assets/fonts/Gilroy/Gilroy-Extrabold.ttf) format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-ExtraboldItalic.ttf);
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-Light.eot);
+  src: url(../assets/fonts/Gilroy/Gilroy-Light.eot?#iefix) format('embedded-opentype'),
+  url(../assets/fonts/Gilroy/Gilroy-Light.woff2) format('woff2'),
+  url(../assets/fonts/Gilroy/Gilroy-Light.woff) format('woff'),
+  url(../assets/fonts/Gilroy/Gilroy-Light.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-BlackItalic.ttf);
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-Semibold.ttf);
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-SemiboldItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-MediumItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-RegularItalic.ttf);
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-UltraLight.ttf);
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-UltraLightItalic.ttf);
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-Thin.ttf);
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy/Gilroy-ThinItalic.ttf);
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+button:hover,
+input:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  min-width: auto !important;
+  min-height: auto !important;
+}
+
+* {
+  font-family: Gilroy;
+}
+
+body {
+  @include font(22px, 24px);
+  color: $text-color;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 15px;
+}
+
+main.ant-layout-content {
+  padding-top: 30px;
+  min-height: calc(100vh - 136px) !important;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
