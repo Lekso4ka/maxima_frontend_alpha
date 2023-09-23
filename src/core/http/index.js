@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const API_URL = 'https://backend.learn.maxima.school'
+export const API_URL = 'https://backend.dev.learn.maxima.school'
 
 const $api = axios.create({
     // withCredentials: true,
