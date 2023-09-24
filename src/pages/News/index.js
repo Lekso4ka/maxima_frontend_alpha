@@ -5,6 +5,7 @@ import CardBase from "../../components/ui/CardBase";
 import NewsService from "../../core/services/NewsService";
 import CreateNewsModal from "../../containers/Modal/CreateNewsModal";
 import {API_URL} from "../../core/http";
+import NewsCard from "../../components/news-card/NewsCard";
 
 const NewsPage = () => {
     const [news, setNews] = useState([]);
@@ -37,6 +38,8 @@ const NewsPage = () => {
                 }
             </Space>
             <CreateNewsModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
+
+
         </>
     );
 };

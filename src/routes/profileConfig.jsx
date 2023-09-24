@@ -4,9 +4,10 @@ import NewsPage from "../pages/News";
 export const profileConfig = {
     "PARTNER": {
         menu: [
+
             {
-                name: 'Главная',
-                path: '/',
+                name: 'Пользователи',
+                path: '/users',
                 component: <Profile/>,
                 isMenuItem: true,
                 exact: true,
