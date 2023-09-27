@@ -41,9 +41,12 @@ const NewsCard = () => {
 
                         />)
                     }
+
                 </Space>
+
             </div>
             {/*<CreateNewsModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>*/}
+
         </>
     );
 };
