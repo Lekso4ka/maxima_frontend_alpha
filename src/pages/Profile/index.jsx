@@ -21,6 +21,7 @@ const Profile = () => {
             <Title level={3}>Добро пожаловать {user?.lastName} {user?.firstName}!</Title>
             <NewsCard/>
 
+
         </>
     )
 }

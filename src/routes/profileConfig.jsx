@@ -6,8 +6,8 @@ export const profileConfig = {
         menu: [
 
             {
-                name: 'Пользователи',
-                path: '/users',
+                name: 'Главная',
+                path: '/',
                 component: <Profile/>,
                 isMenuItem: true,
                 exact: true,

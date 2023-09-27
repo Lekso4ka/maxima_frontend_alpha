@@ -27,6 +27,7 @@ const NewsPage = () => {
                     Создать новость
                 </Button>
             </Space>
+            <div>
             <Space align={'start'} wrap={true}>
                 {
                     news.map(n => <CardBase
@@ -34,12 +35,12 @@ const NewsPage = () => {
                         img={`${API_URL}/files/${n.titleImage.storageFileName}`}
                         title={n.title}
                         desc={n.text}
+
                     />)
                 }
             </Space>
+            </div>
             <CreateNewsModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
-
-
         </>
     );
 };
