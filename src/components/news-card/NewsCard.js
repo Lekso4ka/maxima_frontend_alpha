@@ -24,7 +24,12 @@ const NewsCard = () => {
 
     return (
         <>
-
+            {/*<Space align={'start'} wrap={true} size={100}>*/}
+            {/*    <Title level={3}>Новости</Title>*/}
+            {/*    <Button type="primary" onClick={showModal}>*/}
+            {/*        Создать новость*/}
+            {/*    </Button>*/}
+            {/*</Space>*/}
             <div>
                 <Space align={'start'} wrap={true}>
                     {
