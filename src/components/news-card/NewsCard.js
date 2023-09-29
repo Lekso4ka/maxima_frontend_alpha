@@ -1,4 +1,4 @@
-import CardBase from "../ui/CardBase";
+import CardBaseTwo from "../ui/CardBaseTwo";
 import {API_URL} from "../../core/http";
 import {Button, Space} from "antd";
 import React, {useEffect, useState} from "react";
@@ -24,25 +24,9 @@ const NewsCard = () => {
 
     return (
         <>
-            {/*<Space align={'start'} wrap={true} size={100}>*/}
-            {/*    <Title level={3}>Новости</Title>*/}
-            {/*    <Button type="primary" onClick={showModal}>*/}
-            {/*        Создать новость*/}
-            {/*    </Button>*/}
-            {/*</Space>*/}
+
             <div>
-                <Space align={'start'} wrap={true}>
-                    {
-                        news.map(n => <CardBase
-                            key={n.id}
-                            img={`${API_URL}/files/${n.titleImage.storageFileName}`}
-                            title={n.title}
-                            desc={n.text}
-
-                        />)
-                    }
-
-                </Space>
+                <CardBaseTwo/>
 
             </div>
             {/*<CreateNewsModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>*/}
