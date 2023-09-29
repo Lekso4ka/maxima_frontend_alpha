@@ -28,6 +28,7 @@ const HeaderBase = () => {
     return (
         <Header style={headerStyle}>
             <Logo/>
+            
             <MenuBase/>
             <Button onClick={logOutHandler} icon={<LogoutOutlined />}/>
         </Header>
