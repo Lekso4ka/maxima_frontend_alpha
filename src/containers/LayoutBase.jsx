@@ -1,6 +1,6 @@
 import React from 'react'
 import AppRouter from '../components/smart/AppRouter'
-import Header from "../components/ui/Header/HeaderBase";
+import Header from '../components/Header/Header';
 import { Layout } from 'antd';
 
 const { Footer, Content } = Layout;
