@@ -1,12 +1,12 @@
 import React from 'react';
-import '../../../assets/image/02.png';
 import './style.scss';
+
 
 const CardBaseTwo = ({
     img,
     title,
     desc,
-    data
+    date
 
                   }) => {
     return (
@@ -15,7 +15,7 @@ const CardBaseTwo = ({
 
 
             <img  alt={"картинка"}  src={img}/>
-            <p> <h4>дата: {data}</h4> </p>
+            <p> <h4>дата: {date}</h4> </p>
             <a href="#" className="read-more">Читать далее</a>
 
         </div>

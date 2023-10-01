@@ -4,7 +4,7 @@ import LayoutBase from './containers/LayoutBase'
 import AuthService from "./core/services/AuthService";
 import {useDispatch} from "react-redux";
 import {login, logOut} from "./core/store/features/user/userSlice";
-import news from './assets/data/news.json'
+import news from './assets/date/news.json'
 import CardBaseTwo from "./components/ui/CardBaseTwo";
 
 function App() {
