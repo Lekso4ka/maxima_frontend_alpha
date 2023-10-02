@@ -14,7 +14,7 @@ const CardBaseTwo = ({
             <h2>{title}</h2>
 
 
-            <img  alt={"картинка"}  src={img}/>
+            <img   src={img} alt={"картинка"} />
             <p> <h4>дата: {date}</h4> </p>
             <a href="#" className="read-more">Читать далее</a>
 
