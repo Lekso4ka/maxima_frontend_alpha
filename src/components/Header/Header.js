@@ -6,17 +6,15 @@ function Header () {
 
     return (
     <>
-    <header>
-        <div><Link to={'/'}>Главная</Link></div>
-        <div><Link to={'/courses'}>Курсы</Link></div>
-        <div><Link to={'/users'}>Пользователи</Link></div>
-        <div><Link to={'/news'}>Новости</Link></div>
-        <div><Link to={'/materials'}>Материалы</Link></div>
-    </header>
+        <nav>
+            <Link to={'/'}>Главная</Link>
+            <Link to={'/courses'}>Курсы</Link>
+            <Link to={'/users'}>Пользователи</Link>
+            <Link to={'/news'}>Новости</Link>
+            <Link to={'/materials'}>Материалы</Link>
+        </nav>
     </>
-    
     )
-
 }
 
     
