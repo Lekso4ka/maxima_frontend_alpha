@@ -32,7 +32,7 @@ const Profile = () => {
             <Title level={3}>Добро пожаловать {user?.lastName} {user?.firstName}!</Title>
 
             {/*картинка с инета*/}
-            {news.map(item => <CardBaseTwo title={item.title} date={item.date} img={item.img} />)}
+            {news.map(item => <CardBaseTwo title={item.title} date={item.date} img={item.img} text={item.text} />)}
 
             {/*картинка локальная*/}
             {news.map(item => <CardBaseTwo title={item.title} date={item.date} img={images[item.img]} />)}

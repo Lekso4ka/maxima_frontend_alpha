@@ -5,7 +5,7 @@ import './style.scss';
 const CardBaseTwo = ({
     img,
     title,
-    desc,
+    text,
     date
 
                   }) => {
@@ -16,7 +16,9 @@ const CardBaseTwo = ({
 
             <img   src={img} alt={"картинка"} />
             <p> <h4>дата: {date}</h4> </p>
-            <a href="#" className="read-more">Читать далее</a>
+            <p>{text}</p>
+
+            <button href="#" className="read-more">Читать далее</button>
 
         </div>
 
