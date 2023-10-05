@@ -24,39 +24,39 @@ const NewsPage = () => {
     const [checkedF, setCheckedF] = useState(true);
 
     let msgA;
-    if(checkedA){
+    if (checkedA) {
         msgA = <span>Не видно</span>
-    }else{
+    } else {
         msgA = <span>Видно</span>
     }
     let msgB;
-    if(checkedB){
+    if (checkedB) {
         msgB = <span>Не видно</span>
-    }else{
+    } else {
         msgB = <span>Видно</span>
     }
     let msgC;
-    if(checkedC){
+    if (checkedC) {
         msgC = <span>Не видно</span>
-    }else{
+    } else {
         msgC = <span>Видно</span>
     }
     let msgD;
-    if(checkedD){
+    if (checkedD) {
         msgD = <span>Не видно</span>
-    }else{
+    } else {
         msgD = <span>Видно</span>
     }
     let msgE;
-    if(checkedE){
+    if (checkedE) {
         msgE = <span>Не видно</span>
-    }else{
+    } else {
         msgE = <span>Видно</span>
     }
     let msgF;
-    if(checkedF){
+    if (checkedF) {
         msgF = <span>Не видно</span>
-    }else{
+    } else {
         msgF = <span>Видно</span>
     }
 
@@ -76,10 +76,10 @@ const NewsPage = () => {
             <div>
                 <table className="table">
                     <tr>
-                        <th> Название </th>
-                        <th> Дата создания </th>
-                        <th> Текст </th>
-                        <th> Видимость для студентов </th>
+                        <th> Название</th>
+                        <th> Дата создания</th>
+                        <th> Текст</th>
+                        <th> Видимость для студентов</th>
                         <th>Видимость для преподавателей</th>
                         <th>Управление</th>
                     </tr>
@@ -90,18 +90,19 @@ const NewsPage = () => {
                         <td>Ячейка 3</td>
                         <td>
                             <div>
-                                <input type="checkbox" checkedA={checkedA} onChange={() => setCheckedA(!checkedA)} />
+                                <input type="checkbox" checkedA={checkedA} onChange={() => setCheckedA(!checkedA)}/>
                                 <span>{msgA}</span>
                             </div>
                         </td>
                         <td>
                             <div>
-                                <input type="checkbox" checkedB={checkedB} onChange={() => setCheckedB(!checkedB)} />
+                                <input type="checkbox" checkedB={checkedB} onChange={() => setCheckedB(!checkedB)}/>
                                 <span>{msgB}</span>
                             </div>
                         </td>
                         <td>
-                            <button className="image-button"><img src={Gear} alt={"картинка"} /></button></td>
+                            <button className="image-button"><img src={Gear} alt={"картинка"}/></button>
+                        </td>
                     </tr>
                     <tr>
                         <td>Ячейка 1</td>
@@ -109,18 +110,19 @@ const NewsPage = () => {
                         <td>Ячейка 3</td>
                         <td>
                             <div>
-                                <input type="checkbox" checkedC={checkedC} onChange={() => setCheckedC(!checkedC)} />
+                                <input type="checkbox" checkedC={checkedC} onChange={() => setCheckedC(!checkedC)}/>
                                 <span>{msgC}</span>
                             </div>
                         </td>
                         <td>
                             <div>
-                                <input type="checkbox" checkedD={checkedD} onChange={() => setCheckedD(!checkedD)} />
+                                <input type="checkbox" checkedD={checkedD} onChange={() => setCheckedD(!checkedD)}/>
                                 <span>{msgD}</span>
                             </div>
                         </td>
                         <td>
-                            <button className="image-button"><img src={Gear} alt={"картинка"} /></button></td>
+                            <button className="image-button"><img src={Gear} alt={"картинка"}/></button>
+                        </td>
                     </tr>
                     <tr>
                         <td>Ячейка 1</td>
@@ -128,18 +130,19 @@ const NewsPage = () => {
                         <td>Ячейка 3</td>
                         <td>
                             <div>
-                                <input type="checkbox" checkedE={checkedE} onChange={() => setCheckedE(!checkedE)} />
+                                <input type="checkbox" checkedE={checkedE} onChange={() => setCheckedE(!checkedE)}/>
                                 <span>{msgE}</span>
                             </div>
                         </td>
                         <td>
                             <div>
-                            <input type="checkbox" checkedF={checkedF} onChange={() => setCheckedF(!checkedF)} />
-                            <span>{msgF}</span>
+                                <input type="checkbox" checkedF={checkedF} onChange={() => setCheckedF(!checkedF)}/>
+                                <span>{msgF}</span>
                             </div>
                         </td>
                         <td>
-                            <button className="image-button"><img src={Gear} alt={"картинка"} /></button></td>
+                            <button className="image-button"><img src={Gear} alt={"картинка"}/></button>
+                        </td>
                     </tr>
 
                 </table>
