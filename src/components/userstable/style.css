@@ -1,0 +1,28 @@
+.userstable {
+    width: 70%;
+    margin-bottom: 20px;
+    border: 1px solid #f4efef;
+    border-collapse: collapse;
+  }
+  
+  .userstable th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #151313;
+    width: 22%;
+  }
+  
+  .userstable td {
+    border: 1px solid #151313;
+    padding: 5px;
+    width: 20%;
+  }
+
+  .button {
+    width: 5px;
+    height: 5px;
+  }
+  
+
+  
