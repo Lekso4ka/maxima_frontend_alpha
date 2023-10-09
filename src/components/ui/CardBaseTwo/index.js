@@ -3,10 +3,10 @@ import './style.scss';
 
 
 const CardBaseTwo = ({
-                         img,
+                         titleImage,
                          title,
                          text,
-                         date
+                         createdAt
 
                      }) => {
     return (
@@ -14,8 +14,8 @@ const CardBaseTwo = ({
             <h2>{title}</h2>
 
 
-            <img src={img} alt={"картинка"}/>
-            <p><h4>дата: {date}</h4></p>
+            <img src={titleImage} alt={"картинка"}/>
+            <p><h4>Date ("{createdAt}")</h4></p>
             <p>{text}</p>
 
             <button href="#" className="read-more">Читать далее</button>

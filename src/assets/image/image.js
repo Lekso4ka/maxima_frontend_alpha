@@ -1,9 +1,9 @@
-import Vinni from "./vinni";
+// import Vinni from "./vinni";
 import Default from "./default.png";
 import Gear from "./gear.png"
 
 export {
-    Vinni,
+    // Vinni,
     Default,
     Gear,
 
