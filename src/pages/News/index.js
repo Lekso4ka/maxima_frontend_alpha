@@ -32,7 +32,7 @@ const NewsPage = () => {
                 {/*    Создать новость*/}
                 {/*</Button>*/}
             </Space>
-            {news.map(item => <Table title={item.title} createdAt={item.createdAt} titleImage={item.titleImage}
+            {news.map(item => <Table forTeachers={item.forTeachers} forStudents={item.forStudents} title={item.title} createdAt={item.createdAt} titleImage={item.titleImage}
                                      text={item.text}/>)}
 
             {/*<div>*/}
