@@ -1,13 +1,15 @@
 .userstable {
     width: 70%;
-    margin:60px 20px;
+    margin-top: 60px;
     border: 1px solid #f4efef;
     border-collapse: collapse;
     margin-left: 15%;
   }
 
-  .userstable tr {
-   
+  th,td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 4px;
   }
   
   .userstable th {
@@ -15,17 +17,20 @@
     padding: 5px;
     background: #efefef;
     border: 1px solid #151313;
-    width: 22%;
+    height: 40px;
+    width: 10%;
+    background-color: rgb(175, 123, 205);
   }
   
   .userstable td {
-    border: 1px solid #151313;
+    border: 1px solid black;
     padding: 5px;
-    width: 20%;
+    height: 40px;
+    width: 15%;
   }
 
   .image-button:hover{
-    opacity: 0/.8;
+    opacity: 0.8;
   }
   .image-button:active{
     transform: scale(0.99);
