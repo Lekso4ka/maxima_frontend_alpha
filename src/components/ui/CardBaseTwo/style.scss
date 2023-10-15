@@ -1,0 +1,33 @@
+.card {
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 10px 5px 5px blue;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+.card img {
+  width: 250px;
+
+
+}
+
+.read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #0062cc;
+}

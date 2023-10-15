@@ -4,6 +4,7 @@ import NewsPage from "../pages/News";
 export const profileConfig = {
     "PARTNER": {
         menu: [
+
             {
                 name: 'Главная',
                 path: '/',

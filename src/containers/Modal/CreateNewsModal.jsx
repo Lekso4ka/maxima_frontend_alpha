@@ -25,6 +25,7 @@ const CreateNewsModal = ({isModalOpen, setIsModalOpen}) => {
                 <Space direction="vertical" size="middle" style={{display: 'flex'}}>
                     <Input placeholder="Заголовок" value={title} onChange={(e) => setTitle(e.target.value)}/>
                     <TextArea rows={4} placeholder="Текст" value={text} onChange={(e) => setText(e.target.value)}/>
+
                 </Space>
             </Modal>
         </>
