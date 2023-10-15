@@ -2,7 +2,10 @@ import React, {useEffect, useState} from 'react'
 import AuthService from "../../core/services/AuthService";
 import Title from "antd/lib/typography/Title";
 import news from "../../assets/date/news.json";
+import news_local from "../../assets/date/news_local.json";
 import CardBaseTwo from "../../components/ui/CardBaseTwo";
+
+import images from "../../assets/image/vinni";
 
 
 const Profile = () => {
@@ -18,11 +21,10 @@ const Profile = () => {
             <Title level={3}>Добро пожаловать {user?.lastName} {user?.firstName}!</Title>
 
             {/*картинка с инета*/}
-            {news.map(item => <CardBaseTwo title={item.title} createdAt={item.createdAt} titleImage={item.titleImage}
-                                           text={item.text}/>)}
+            {news.map(item => <CardBaseTwo {...item}/>)}
 
             {/*картинка локальная*/}
-            {news.map(item => <CardBaseTwo title={item.title} createdAt={item.createdAt} img={item.titleImage}/>)}
+            {news_local.map(item => <CardBaseTwo {...item} titleImage={images[item.titleImage]}/>)}
 
 
         </>
