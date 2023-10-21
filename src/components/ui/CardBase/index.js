@@ -5,7 +5,8 @@ import Meta from "antd/es/card/Meta";
 const CardBase = ({
     img,
     title,
-    desc
+    desc,
+
                   }) => {
     return (
         <Card
@@ -15,6 +16,7 @@ const CardBase = ({
         >
             <Meta title={title}
                   description={desc}
+
             />
         </Card>
     );

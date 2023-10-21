@@ -6,6 +6,7 @@ import Users from '../pages/Users/users';
 export const profileConfig = {
     "PARTNER": {
         menu: [
+
             {
                 name: 'Главная',
                 path: '/',
