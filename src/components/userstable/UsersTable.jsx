@@ -8,7 +8,6 @@ const UsersTable = (
 ) => {
   
   return(
-
           <tr>
             <td>{users.lastName} {users.firstName} {users.patronymic}</td>
             <td>{users.login}</td>
