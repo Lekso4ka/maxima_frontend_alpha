@@ -1,0 +1,103 @@
+[
+    {
+        "role": "TEACHER",
+        "firstName": "Boris",
+        "lastName": "Ivanov",
+        "patronymic": "Petrovich",
+        "email": "borisjjjd@mail.ru",
+        "login": "boris",
+        "gender": "MALE",
+        "birthDate": "1955-03-25"
+    },
+    {
+        "role": "TEACHER",
+        "firstName": "Valeriy",
+        "lastName": "Loskutov",
+        "patronymic": "Abramovich",
+        "email": "valeriysd@mail.ru",
+        "login": "valeriy",
+        "gender": "MALE",
+        "birthDate": "1974-03-25"
+    },
+    {
+        "role": "STUDENT",
+        "firstName": "Valentin",
+        "lastName": "Dmitriev",
+        "patronymic": "Konstantinovich",
+        "email": "valentinfdf@mail.ru",
+        "login": "valentin",
+        "gender": "MALE",
+        "birthDate": "1992-03-25"
+    },
+    {
+        "role": "STUDENT",
+        "firstName": "Mariya",
+        "lastName": "Yakina",
+        "patronymic": "Antonovna",
+        "email": "mashasdsd@mail.ru",
+        "login": "masha",
+        "gender": "FEMALE",
+        "birthDate": "1981-03-30"
+    },
+    {
+        "role": "STUDENT",
+        "firstName": "Aleksandr",
+        "lastName": "Morgunov",
+        "patronymic": "Romanovich",
+        "email": "aleksandrmr@mail.ru",
+        "login": "aleksandr",
+        "gender": "MALE",
+        "birthDate": "1992-03-25"
+    },
+    {
+        "role": "STUDENT",
+        "firstName": "Konstantin",
+        "lastName": "Vasilyev",
+        "patronymic": "Andreevich",
+        "email": "konstantinvvv@mail.ru",
+        "login": "konstantin",
+        "gender": "MALE",
+        "birthDate": "1979-08-22"
+    },
+    {
+        "role": "STUDENT",
+        "firstName": "Pavel",
+        "lastName": "Belov",
+        "patronymic": "Vladimirovich",
+        "email": "belovggg@mail.ru",
+        "login": "belov",
+        "gender": "MALE",
+        "birthDate": "1978-03-24"
+    },
+    {
+        "role": "STUDENT",
+        "firstName": "Oleg",
+        "lastName": "Altyntsev",
+        "patronymic": "Mikhailovich",
+        "email": "olegnpm@mail.ru",
+        "login": "oleg",
+        "gender": "MALE",
+        "birthDate": "1999-01-05"
+    },
+    {
+        "role": "STUDENT",
+        "firstName": "Albert",
+        "lastName": "Schlegel",
+        "patronymic": "Lvovich",
+        "email": "albertcst@mail.ru",
+        "login": "albert",
+        "gender": "MALE",
+        "birthDate": "1987-05-30"
+    },
+    {
+        "role": "STUDENT",
+        "firstName": "Angelina",
+        "lastName": "Melnik",
+        "patronymic": "Markovna",
+        "email": "melnikangel@mail.ru",
+        "login": "angel",
+        "gender": "FEMALE",
+        "birthDate": "2000-11-18"
+    }
+]
+

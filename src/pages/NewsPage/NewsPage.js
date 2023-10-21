@@ -1,12 +1,7 @@
+
 import React, {useEffect, useState} from 'react';
 import Title from "antd/lib/typography/Title";
 import {Button, Space} from "antd";
-import CardBase from "../../components/ui/CardBase";
-import NewsService from "../../core/services/NewsService";
-import CreateNewsModal from "../../containers/Modal/CreateNewsModal";
-import {API_URL} from "../../core/http";
-import NewsCard from "../../components/news-card/NewsCard";
-import './News.scss';
 import {Gear} from "../../assets/image/image";
 import Table from "../../components/table/Table";
 import news from "../../assets/date/news.json";
