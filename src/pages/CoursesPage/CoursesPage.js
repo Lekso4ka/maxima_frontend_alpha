@@ -5,15 +5,14 @@ import {useParams} from "react-router-dom";
 import Disciplines from '../../components/disciplines/Disciplines'
 
 
-function CoursesPage () {
-    const dispatch = useDispatch();
 
-    const handleAddDisciplines = () => {
-        dispatch(addDisciplines(disciplinesSlice()))
-    }
+function CoursesPage () {
 
     return (
+        <>
         <Disciplines/>
+
+        </>
     )
 
 

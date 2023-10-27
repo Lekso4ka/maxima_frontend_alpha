@@ -6,6 +6,7 @@ import NewsPage from './pages/NewsPage/NewsPage';
 import MaterialsPage from './pages/MaterialsPage/MaterialsPage';
 import Header from './components/Header/Header';
 
+
 function App() {
   return (
     <div className="App">
