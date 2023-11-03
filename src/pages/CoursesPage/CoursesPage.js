@@ -43,12 +43,12 @@ const CoursesPage = () => {
 
             <div>
                 <Space align={'start'} direction={"horizontal"} wrap={true}>
-                    {disciplines}
-                    {disciplines.map(el=><div key={el}>
-                        <span>el</span>
+                    <p>{disciplines}</p>
+                    <p>{disciplines.map(el=><div key={el}>
+                        <span></span>
                         <CloseOutlined onClick={e =>dispatch(delDisciplines(el))}/>
                     </div>)
-                    }
+                    }</p>
 
                 </Space>
             </div>
