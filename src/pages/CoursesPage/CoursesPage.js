@@ -41,17 +41,17 @@ const CoursesPage = () => {
             <CreateDisciplinesModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
 
 
-            <div>
+            <ul>
                 <Space align={'start'} direction={"horizontal"} wrap={true}>
-                    <p>{disciplines}</p>
-                    <p>{disciplines.map(el=><div key={el}>
+                    <li>{disciplines}</li>
+                    <div>{disciplines.map(el=><div key={el}>
                         <span></span>
                         <CloseOutlined onClick={e =>dispatch(delDisciplines(el))}/>
                     </div>)
-                    }</p>
+                    }</div>
 
                 </Space>
-            </div>
+            </ul>
 
 
         </>
