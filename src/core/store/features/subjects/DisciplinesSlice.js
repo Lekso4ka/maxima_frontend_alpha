@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-const initialState = {disciplines:['html', 'javascript', 'python']};
+const initialState = {disciplines:['html ', 'javascript ', 'python ']};
 // const disciplinesSlise = {
 //     disciplines: ['html', 'javascript', 'python'], // [item1, item2, item3]
 //     // countDisciplines: 0,
