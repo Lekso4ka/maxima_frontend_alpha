@@ -4,26 +4,10 @@ import TagsComponent from "../../components/tagsComponent/TagsComponent";
 import TagsForm from "../../components/TegsForm/TagsForm";
 
 function MaterialsPage () {
-    const [tags, setTags] = useState([])
 
-    const addTask = (userInput) => {
-        if(userInput) {
-            const newItem = {
-                id: Math.random().toString(15).substr(2,9),
-                task: userInput
-            }
-            setTags([...tags, newItem])
-        }
+    const tags = useSelector(state => state.tags.tags)  //добавлено
 
-    }
 
-    const removeTask = () => {
-
-    }
-
-    const handleToggle = () => {
-
-    }
 
 
     return (
@@ -31,14 +15,12 @@ function MaterialsPage () {
             <h1>Материалы</h1>
             <h3>Список тегов: {tags.length}</h3>
             <div>
-                <TagsForm addTask={addTask}></TagsForm>
-                {tags.map((tags) => {
+                <TagsForm />
+                {tags.map((tag) => {
                         return (
                             <TagsComponent
-                                todo={tags}
-                                key={tags.id}
-                                toggleTask={handleToggle}
-                                removeTask={removeTask}
+                                name = {tag}
+                                key ={tag}
                             />
 
 

@@ -1,5 +1,9 @@
-function  TagsComponent({ }) {
-    return null
+
+function  TagsComponent({name }) {
+
+    return <li>{name}</li>
+
+
 }
 
 
