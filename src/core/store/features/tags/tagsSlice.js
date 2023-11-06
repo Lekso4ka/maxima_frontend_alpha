@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import jwtDecode from "jwt-decode";
 
-const initialState = {tags: []};
+const initialState = {tags: ['html', 'button', 'div']};
 
 export const tagsSlice = createSlice({
     name: 'tags',

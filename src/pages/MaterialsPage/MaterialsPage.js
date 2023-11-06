@@ -29,31 +29,29 @@ function MaterialsPage () {
 
     return (
         <>
-            <Space align={'start'} wrap={true} size={100}>
-                <Title level={3}>Теги</Title>
-                <Button type="primary" onClick={showModal}>
-                    Добавить тег
-                </Button>
 
-            </Space>
             <CreateTagsModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
             <div className={'materials'}>
                 <h1>Материалы</h1>
-                <h3>Список тегов: {tags.length}</h3>
-                <div>
-                    <TagsForm/>
-                    {tags.map((tag) => {
-                        return (
-                            <TagsComponent
-                                name={tag}
-                                key={tag}
-                            />
+                <Space align={'start'} wrap={true} size={100}>
+                    <Title level={3}>Теги</Title>
+                    <Button type="primary" onClick={showModal}>
+                        Добавить тег
+                    </Button>
 
+                </Space>
+                <ul>
+                    <Space align={'start'} direction={"horizontal"} wrap={true}>
+                        <div>{tags.map(el=><div key={el}>
+                            <span>{el}</span>
+                            <CloseOutlined onClick={e =>dispatch(delTag(el))}/>
+                        </div>)
+                        }</div>
 
-                        )
-                    })}
-                </div>
+                    </Space>
+                </ul>
             </div>
+
         </>
 
     );
