@@ -7,39 +7,20 @@ import {CoffeeOutlined} from "@ant-design/icons";
 import Disciplines from "../../components/disciplines/Disciplines";
 import {store} from "../../core/store";
 import NewsService from "../../core/services/NewsService";
+import {useDispatch} from "react-redux";
 
 const CreateDisciplinesModal = ({isModalOpen, setIsModalOpen}) => {
     const [discipline, setDiscipline] = useState('');
     // const [text, setText] = useState('');
 
+    const dispatch = useDispatch();
+
     const handleOk = () => {
-         {
-            store.dispatch(addDisciplines(discipline))
-                .then(
-                    () => {
-                        setIsModalOpen(false)
-                    }
-                )
-                // .then(() => {
-                //     setIsModalOpen(false);
-                // })
-        };
-
-            // store.dispatch(addDisciplines())
-            //     .then(() => {
-            //                 setIsModalOpen(false);
-            //             })
-
-
-        // NewsService.createNews({
-        //     title,
-        //     text
-        // })
-        //     .then(() => {
-        //         setIsModalOpen(false);
-        //     })
-
+        dispatch(addDisciplines(discipline))
+        setIsModalOpen(false)
     };
+
+
     const handleCancel = () => {
         setIsModalOpen(false);
     };
