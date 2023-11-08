@@ -1,6 +1,6 @@
 import Profile from '../pages/Profile'
-import NewsPage from "../pages/News";
-import Users from '../pages/Users/users';
+import NewsPage from "../pages/NewsPage/NewsPage";
+import Users from '../pages/UsersPage/UsersPage';
 
 
 export const profileConfig = {

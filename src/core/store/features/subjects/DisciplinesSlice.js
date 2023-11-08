@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-const initialState = {disciplines:['html ', 'javascript ', 'python ']};
+const initialState = {disciplines:['html', 'javascript', 'python']};
 
 
 
@@ -10,7 +10,10 @@ export const DisciplinesSlice = createSlice(
         initialState,
         reducers: {
             addDisciplines: (state, action) =>{
-                state.disciplines.push(action.payload)
+                if(!state.disciplines.includes(action.payload)){
+                    state.disciplines.push(action.payload)
+                }
+
             },
             delDisciplines: (state, action) =>{
                 state.disciplines = state.disciplines.filter(el => el !== action.payload)
