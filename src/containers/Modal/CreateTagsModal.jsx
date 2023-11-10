@@ -13,8 +13,10 @@ const CreateTagsModal = ({isModalOpen, setIsModalOpen}) => {
     const dispatch = useDispatch();
 
     const handleOk = () => {
-        dispatch(addTag(tag))
-        setIsModalOpen(false)
+        if (tag.trim()) {
+            dispatch(addTag(tag))
+            setIsModalOpen(false)
+        }
     };
     const handleCancel = () => {
         setIsModalOpen(false);
