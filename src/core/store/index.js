@@ -1,10 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import userReducer from './features/user/userSlice'
 import disciplinesSlise from "./features/subjects/DisciplinesSlice";
+import tagsReducer from './features/tags/tagsSlice'
+
 export const store = configureStore({
     reducer: {
-        user: userReducer,
         disciplines: disciplinesSlise,
+        user: userReducer,
+        tags: tagsReducer
     },
 })
 
