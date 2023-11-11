@@ -16,6 +16,10 @@ const CreateDisciplinesModal = ({isModalOpen, setIsModalOpen}) => {
     const dispatch = useDispatch();
 
     const handleOk = () => {
+        if (discipline.trim()){       //проверка на наличие discipline или discipline.trim() еще проверка на пробелы
+            dispatch(addDisciplines(discipline))
+            setIsModalOpen(false)
+        }
         dispatch(addDisciplines(discipline))
         setIsModalOpen(false)
     };

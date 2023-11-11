@@ -23,7 +23,6 @@ function App() {
   return (
     <div className="App">
       <LayoutBase/>
-      <Header />
         <Routes>
           <Route path={'/'} element={<IndexPage/>}></Route>
           <Route path={'/courses'} element={<CoursesPage/>}></Route>
