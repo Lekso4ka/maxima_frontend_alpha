@@ -1,0 +1,14 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+p {
+    margin: 20px;
+}
+.open-btn{
+    margin: 10px 20px;
+    padding: 20px;
+    font-size: 2rem;
+}
