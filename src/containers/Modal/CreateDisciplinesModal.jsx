@@ -8,6 +8,7 @@ import Disciplines from "../../components/disciplines/Disciplines";
 import {store} from "../../core/store";
 import NewsService from "../../core/services/NewsService";
 import {useDispatch} from "react-redux";
+import disciplines from "../../components/disciplines/Disciplines";
 
 const CreateDisciplinesModal = ({isModalOpen, setIsModalOpen}) => {
     const [discipline, setDiscipline] = useState('');
@@ -16,12 +17,10 @@ const CreateDisciplinesModal = ({isModalOpen, setIsModalOpen}) => {
     const dispatch = useDispatch();
 
     const handleOk = () => {
-        if (discipline.trim()){       //проверка на наличие discipline или discipline.trim() еще проверка на пробелы
+        if (discipline.trim()){
             dispatch(addDisciplines(discipline))
             setIsModalOpen(false)
         }
-        dispatch(addDisciplines(discipline))
-        setIsModalOpen(false)
     };
 
 
