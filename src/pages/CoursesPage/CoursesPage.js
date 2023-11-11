@@ -1,18 +1,13 @@
 import {useDispatch, useSelector} from "react-redux";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {addDisciplines, delDisciplines} from "../../core/store/features/subjects/DisciplinesSlice";
-import {useParams} from "react-router-dom";
-import store from "../../core/store"
-import Disciplines from '../../components/disciplines/Disciplines';
 import {CloseOutlined} from "@ant-design/icons";
-
 import Title from "antd/lib/typography/Title";
-import news from "../../assets/date/news.json";
-import Table from "../../components/table/Table";
 import {Button, Space, Input} from "antd";
-
 import CreateDisciplinesModal from "../../containers/Modal/CreateDisciplinesModal";
-import './style.css'
+import './style.css';
+import $api from "../../core/http";
+
 
 
 
@@ -28,6 +23,9 @@ const CoursesPage = () => {
     const showModal = () => {
         setIsModalOpen(true);
     };
+
+
+
 
     return (
         <>
