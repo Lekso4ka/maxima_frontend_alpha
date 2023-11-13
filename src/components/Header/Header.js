@@ -6,6 +6,7 @@ import {Button} from "antd";
 import {useDispatch} from "react-redux";
 import {logOut} from "../../core/store/features/user/userSlice";
 import Logo from "../ui/Logo";
+import MenuBase from "../ui/MenuBase";
 
 
 function Header () {
@@ -16,11 +17,12 @@ function Header () {
     <>
         <nav>
             <Logo/>
-            <Link to={'/'}>Главная</Link>
-            <Link to={'/courses'}>Курсы</Link>
-            <Link to={'/users'}>Пользователи</Link>
-            <Link to={'/news'}>Новости</Link>
-            <Link to={'/materials'}>Материалы</Link>
+            <MenuBase/>
+            {/*<Link to={'/'}>Главная</Link>*/}
+            {/*<Link to={'/courses'}>Курсы</Link>*/}
+            {/*<Link to={'/users'}>Пользователи</Link>*/}
+            {/*<Link to={'/news'}>Новости</Link>*/}
+            {/*<Link to={'/materials'}>Материалы</Link>*/}
             <Button onClick={logOutHandler} icon={<LogoutOutlined />}/>
         </nav>
 
