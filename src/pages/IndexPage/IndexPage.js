@@ -14,17 +14,16 @@ function IndexPage () {
         AuthService.getUserDto()
             .then(r => setUser(r.data))
     }, [])
-    return (
-        <>
+    return user && <>
         <h1>Главная</h1>
             <Title level={3}>Добро пожаловать {user?.lastName} {user?.firstName}!</Title>
         {/*картинка с инета*/}
         {news.map(item => <CardBaseTwo {...item}/>)}
 
-{/*картинка локальная*/}
-{news_local.map(item => <CardBaseTwo {...item} titleImage={images[item.titleImage]}/>)}   
+        {/*картинка локальная*/}
+        {news_local.map(item => <CardBaseTwo {...item} titleImage={images[item.titleImage]}/>)}
         </>
-    )
+
     
 }
 

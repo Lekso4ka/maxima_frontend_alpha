@@ -1,6 +1,6 @@
-import DisciplinesSlice, {addDisciplines} from '../../core/store/features/subjects/DisciplinesSlice'
+import DisciplinesSlice, {addDisciplines} from '../../core/store/features/subjects/DisciplinesSlise'
 import {useDispatch} from "react-redux";
-import disciplinesSlice from "../../core/store/features/subjects/DisciplinesSlice";
+import disciplinesSlice from "../../core/store/features/subjects/DisciplinesSlise";
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Item from '../item/Item'

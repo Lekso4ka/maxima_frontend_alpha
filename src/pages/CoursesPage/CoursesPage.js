@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import React, {useState, useEffect} from "react";
-import {addDisciplines, delDisciplines} from "../../core/store/features/subjects/DisciplinesSlice";
+import {addDisciplines, delDisciplines} from "../../core/store/features/subjects/DisciplinesSlise";
 import {CloseOutlined} from "@ant-design/icons";
 import Title from "antd/lib/typography/Title";
 import {Button, Space, Input} from "antd";
@@ -50,6 +50,9 @@ const CoursesPage = () => {
                 </Space>
             </ul>
 
+            <>
+
+            </>
 
         </>
     )
