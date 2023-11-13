@@ -1,10 +1,11 @@
 import {createSlice} from "@reduxjs/toolkit";
+import $api from "../../../http";
 
 const initialState = {disciplines:['html', 'javascript', 'python']};
 
 
 
-export const DisciplinesSlice = createSlice(
+export const DisciplinesSlise = createSlice(
     {
         name: "disciplines",
         initialState,
@@ -12,6 +13,7 @@ export const DisciplinesSlice = createSlice(
             addDisciplines: (state, action) =>{
                 if(!state.disciplines.includes(action.payload)){
                     state.disciplines.push(action.payload)
+
                 }
 
             },
@@ -21,6 +23,6 @@ export const DisciplinesSlice = createSlice(
         }
     }
 )
-export const {addDisciplines, delDisciplines } = DisciplinesSlice.actions
+export const {addDisciplines, delDisciplines } = DisciplinesSlise.actions
 
-export default DisciplinesSlice.reducer
+export default DisciplinesSlise.reducer

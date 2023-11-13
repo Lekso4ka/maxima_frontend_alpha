@@ -24,11 +24,11 @@ function App() {
     <div className="App">
       <LayoutBase/>
         <Routes>
-          <Route path={'/'} element={<IndexPage/>}></Route>
-          <Route path={'/courses'} element={<CoursesPage/>}></Route>
-          <Route path={'/users'} element={<UsersPage/>}></Route>
-          <Route path={'/materials'} element={<MaterialsPage/>}></Route>
-          <Route path={'/news'} element={<NewsPage/>}></Route>
+          {/*<Route path={'/'} element={<IndexPage/>}></Route> //*/}
+          {/*<Route path={'/courses'} element={<CoursesPage/>}></Route>*/}
+          {/*<Route path={'/users'} element={<UsersPage/>}></Route>//*/}
+          {/*<Route path={'/materials'} element={<MaterialsPage/>}></Route>*/}
+          {/*<Route path={'/news'} element={<NewsPage/>}></Route>//*/}
         </Routes>
             
      

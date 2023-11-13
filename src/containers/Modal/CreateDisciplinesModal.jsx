@@ -1,14 +1,8 @@
 import {Input, Modal, Space} from 'antd';
-// import NewsService from "../../core/services/NewsService";
-import TextArea from "antd/es/input/TextArea";
 import React, {useState} from "react";
-import {addDisciplines, delDisciplines} from "../../core/store/features/subjects/DisciplinesSlice";
-import {CoffeeOutlined} from "@ant-design/icons";
-import Disciplines from "../../components/disciplines/Disciplines";
-import {store} from "../../core/store";
-import NewsService from "../../core/services/NewsService";
+import {addDisciplines, delDisciplines} from "../../core/store/features/subjects/DisciplinesSlise";
 import {useDispatch} from "react-redux";
-import disciplines from "../../components/disciplines/Disciplines";
+
 
 const CreateDisciplinesModal = ({isModalOpen, setIsModalOpen}) => {
     const [discipline, setDiscipline] = useState('');
