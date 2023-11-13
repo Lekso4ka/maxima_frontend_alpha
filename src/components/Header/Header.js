@@ -5,6 +5,7 @@ import {LogoutOutlined} from "@ant-design/icons";
 import {Button} from "antd";
 import {useDispatch} from "react-redux";
 import {logOut} from "../../core/store/features/user/userSlice";
+import Logo from "../ui/Logo";
 
 
 function Header () {
@@ -14,6 +15,7 @@ function Header () {
     return (
     <>
         <nav>
+            <Logo/>
             <Link to={'/'}>Главная</Link>
             <Link to={'/courses'}>Курсы</Link>
             <Link to={'/users'}>Пользователи</Link>
