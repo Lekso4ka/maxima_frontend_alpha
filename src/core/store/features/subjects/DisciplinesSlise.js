@@ -14,6 +14,7 @@ export const DisciplinesSlise = createSlice(
                 if(!state.disciplines.includes(action.payload)){
                     state.disciplines.push(action.payload)
 
+
                 }
 
             },
