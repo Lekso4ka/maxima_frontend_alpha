@@ -23,7 +23,26 @@ const CoursesPage = () => {
     const showModal = () => {
         setIsModalOpen(true);
     };
+//    Дисциплины будут получаться из базы данных и пока никак не связаны м Redux!!!
+    const [info, setInfo] = useState([]);
+    const [text, setText] = useState("");
 
+    const infoHandler =async ()=>{
+        const result = await $api.post("/disciplines",{
+            name: text
+        })
+        console.log(result); //вывести в консоль
+        setInfo(prev => [...prev, result.data])  //загружает с сервера значение
+        setText("");  //обнулить ввод
+    }
+
+    useEffect( ()=> {
+        $api.get("/disciplines")
+            .then(result => {
+        setInfo(result.data.data)
+        // console.log(result.data)
+    })
+    },[])
 
 
 
@@ -34,7 +53,6 @@ const CoursesPage = () => {
                 <Button type="primary" onClick={showModal}>
                     Добавить дисциплину
                 </Button>
-
             </Space>
             <CreateDisciplinesModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
 
@@ -43,17 +61,18 @@ const CoursesPage = () => {
                 <Space align={'start'} direction={"horizontal"} wrap={true}>
                     <div>{disciplines.map(el=><div key={el}>
                         <span>{el}</span>
+                        {/*<CloseOutlined onClick={e =>dispatch(delDisciplines(el))}/>*/}
                         <CloseOutlined onClick={e =>dispatch(delDisciplines(el))}/>
                     </div>)
                     }</div>
 
                 </Space>
             </ul>
-
-            <>
-
-            </>
-
+            <div>
+                {info.map(el => <li key={el.id}>{el.name}</li>)}
+                <input value={text} onChange={e => setText(e.target.value)}/>
+                <button onClick={infoHandler}>Ok</button>
+            </div>
         </>
     )
 

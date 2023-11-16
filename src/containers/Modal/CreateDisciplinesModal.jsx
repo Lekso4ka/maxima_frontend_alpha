@@ -3,10 +3,15 @@ import React, {useState} from "react";
 import {addDisciplines, delDisciplines} from "../../core/store/features/subjects/DisciplinesSlise";
 import {useDispatch} from "react-redux";
 
+import DisciplinesService from "../../core/services/DisciplinesService";
+import TextArea from "antd/es/input/TextArea";
+
+import NewsService from "../../core/services/NewsService";
 
 const CreateDisciplinesModal = ({isModalOpen, setIsModalOpen}) => {
     const [discipline, setDiscipline] = useState('');
-    // const [text, setText] = useState('');
+    const [text, setText] = useState('');
+
 
     const dispatch = useDispatch();
 
@@ -16,6 +21,14 @@ const CreateDisciplinesModal = ({isModalOpen, setIsModalOpen}) => {
             setIsModalOpen(false)
         }
     };
+    // const handleOk = () => {
+    //     DisciplinesService.createDisciplines({
+    //
+    //     })
+    //         .then(() => {
+    //             setIsModalOpen(false);
+    //         })
+    // };
 
 
     const handleCancel = () => {
