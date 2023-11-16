@@ -1,34 +1,34 @@
-import {Input, Modal, Space} from 'antd';
-import React, {useState} from "react";
+import {Button, Input, Modal, Space} from 'antd';
+import React, {useEffect, useState} from "react";
 import {addDisciplines, delDisciplines} from "../../core/store/features/subjects/DisciplinesSlise";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import $api from "../../core/http";
 
-import DisciplinesService from "../../core/services/DisciplinesService";
-import TextArea from "antd/es/input/TextArea";
-
-import NewsService from "../../core/services/NewsService";
 
 const CreateDisciplinesModal = ({isModalOpen, setIsModalOpen}) => {
     const [discipline, setDiscipline] = useState('');
     const [text, setText] = useState('');
-
-
     const dispatch = useDispatch();
+    const [info, setInfo] = useState([]);
 
-    const handleOk = () => {
-        if (discipline.trim()){
-            dispatch(addDisciplines(discipline))
-            setIsModalOpen(false)
-        }
-    };
-    // const handleOk = () => {
-    //     DisciplinesService.createDisciplines({
-    //
-    //     })
-    //         .then(() => {
-    //             setIsModalOpen(false);
-    //         })
-    // };
+    const handleOk =async ()=>{
+        const result = await $api.post("/disciplines",{
+            name: text
+        })
+        console.log(result); //вывести в консоль
+        setInfo(prev => [...prev, result.data])  //загружает с сервера значение
+        setText("");  //обнулить ввод
+        setIsModalOpen(false);
+    }
+
+    useEffect( ()=> {
+        $api.get("/disciplines")
+            .then(result => {
+                setInfo(result.data.data)
+                // console.log(result.data)
+            })
+    },[])
+
 
 
     const handleCancel = () => {
@@ -38,7 +38,7 @@ const CreateDisciplinesModal = ({isModalOpen, setIsModalOpen}) => {
         <>
             <Modal title="Добавление дисциплины" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                 <Space direction="vertical" size="middle" style={{display: 'flex'}}>
-                    <Input placeholder="Введите дисциплину" value={discipline} onChange={(e) => setDiscipline(e.target.value)}/>
+                    <input placeholder="Введите дисциплину" value={text} onChange={e => setText(e.target.value)}/>
                     {/*<TextArea rows={4} placeholder="Текст" value={text} onChange={(e) => setText(e.target.value)}/>*/}
                 </Space>
             </Modal>
