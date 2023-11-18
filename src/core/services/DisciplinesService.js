@@ -1,8 +1,8 @@
 import $api from "../http";
 
-export default class NewsService {
-    static async createNews(data) {
-        return await $api.post('/news', {
+export default class DisciplinesService {
+    static async createDisciplines(data){
+        return await $api.post('/disciplines', {
             ...data,
             "titleImageW": "01767685-af81-4d0e-a8f7-9840518b9510.webp",
             "forStudents": true,
@@ -14,7 +14,8 @@ export default class NewsService {
         })
     }
 
-    static async getAllNews() {
-        return await $api.get('/news')
+    static async getAllDisciplines() {
+        return await $api.get('/disciplines')
     }
+
 }
