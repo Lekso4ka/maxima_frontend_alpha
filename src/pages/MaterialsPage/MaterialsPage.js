@@ -43,7 +43,7 @@ function MaterialsPage () {
             .then(result => {
                 setInfo(result.data.data)
             })
-    })
+    }, [])
 
     useEffect(() => {
         console.log("info",info);
@@ -77,7 +77,7 @@ function MaterialsPage () {
                 {info?. map(el => <li key={el.id}>{el.name}</li>)}
             </ul>
             <div>
-                <input value={text} onChange={e=>setText (e.target.value)}/>
+                <input value={text} onChange={e=>setText(e.target.value)}/>
                 <button onClick={infoHandler}>Ok</button>
             </div>
 
