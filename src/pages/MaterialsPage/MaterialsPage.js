@@ -34,7 +34,7 @@ function MaterialsPage () {
             name: text
         })
         console.log(result);
-        setInfo(...prev => [...prev,result.data]);
+        setInfo(prev => [...prev,result.data]);
         setText("");
     }
 
