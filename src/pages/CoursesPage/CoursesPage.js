@@ -42,6 +42,17 @@ const CoursesPage = () => {
     },[])
 
 
+    const delDis = (id) => {
+        $api.delete(`/disciplines/${id}`)
+            .then(result => {
+                console.log(result);
+                if (result.status === 200) {
+                    setInfo(prev => prev.filter(d => d.id !== id))
+                }
+            })
+    }
+
+
 
     return (
         <>
@@ -63,9 +74,13 @@ const CoursesPage = () => {
                 {/*    </div>)*/}
                 {/*    }</div>*/}
                 {/*</Space>*/}
+                {info.map(el => <li key={el.id}>
+                    {el.name}
+                    <CloseOutlined onClick={() => delDis(el.id)}/>
+                    </li>)}
             </ul>
             {/*<div>*/}
-                {info.map(el => <li key={el.id}>{el.name}</li>)}
+                
             {/*    <input value={text} onChange={e => setText(e.target.value)}/>*/}
             {/*    <button onClick={infoHandler}>Ok</button>*/}
             {/*</div>*/}
