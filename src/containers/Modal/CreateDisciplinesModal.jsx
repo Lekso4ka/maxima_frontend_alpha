@@ -5,6 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import $api from "../../core/http";
 
 
+
 const CreateDisciplinesModal = ({isModalOpen, setIsModalOpen}) => {
     const [discipline, setDiscipline] = useState('');
     const [text, setText] = useState('');

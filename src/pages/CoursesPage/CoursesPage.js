@@ -55,7 +55,6 @@ const CoursesPage = () => {
 
 
             <ul>
-
                 {/*<Space align={'start'} direction={"horizontal"} wrap={true}>*/}
                 {/*    <div>{text.map(el=><div key={el}>*/}
                 {/*        <span>{el}</span>*/}
@@ -63,7 +62,6 @@ const CoursesPage = () => {
                 {/*        <CloseOutlined onClick={e => setText(e.target.value)}/>*/}
                 {/*    </div>)*/}
                 {/*    }</div>*/}
-
                 {/*</Space>*/}
             </ul>
             {/*<div>*/}
