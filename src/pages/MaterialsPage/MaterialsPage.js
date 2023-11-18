@@ -1,11 +1,9 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import {addTag, delTag} from "../../core/store/features/tags/tagsSlice";
-import {useParams} from "react-router-dom";
-import {store} from "../../core/store";
+
 import {CloseOutlined} from "@ant-design/icons";
-import TagsComponent from "../../components/tagsComponent/TagsComponent";
-import TagsForm from "../../components/TagsForm/TagsForm";
+
 import Title from "antd/lib/typography/Title";
 import {Button, Space} from "antd";
 import CreateTagsModal from "../../containers/Modal/CreateTagsModal";

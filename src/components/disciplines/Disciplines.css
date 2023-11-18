@@ -10,10 +10,7 @@
 
 }
 
-h1{
-    text-shadow : 3px 3px 0px #222, 5px 5px 0px #378fe5; color : #007ACE;
-    font-size: 45px;
-}
+
 .Disciplines-logo {
     height: 40vmin;
     pointer-events: none;
