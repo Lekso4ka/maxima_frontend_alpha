@@ -1,8 +1,13 @@
 nav {
+    height: 64px;
+    padding-inline: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    background: #ffffff;
     display: flex;
-    justify-content: space-evenly;
-    background-color: #a5ea82;
-    padding: 20px 50px;
+    justify-content: space-between;
     align-items: center;
 }
 
